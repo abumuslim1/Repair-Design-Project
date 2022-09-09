@@ -31,7 +31,7 @@
                     <a href="tel:+79287683239">+7 (928) 768-32-39</a>
                 </div>
                 <div class="bttn-header">
-                    <button class="bttn-default" form="#">Request a call</button>
+                    <button type="button" class="bttn-default" form="#">Request a call</button>
                 </div>
             </div>
         </section>
@@ -52,10 +52,10 @@ cost of materials due to the organization of work
                 </div>
                 <div class="two-bttns">
                     <div class="blocks-bttn-b-i-i-t">
-                        <button class="bttn-default bttn-change-top-img" form="#">Calculate the cost</button>
+                        <button type="button" class="bttn-default bttn-change-top-img" form="#">Calculate the cost</button>
                     </div>
                     <div class="blocks-bttn-b-i-i-t">
-                        <button class="bttn-default bttn-change-top-img bttn-none-bg" form="#">Submit your application</button>
+                        <button type="button" class="bttn-default bttn-change-top-img bttn-none-bg" form="#">Submit your application</button>
                     </div>
                 </div>
             </div>
@@ -141,8 +141,44 @@ cost of materials due to the organization of work
             <img src="assest/img/camera.svg" alt="Камера иконка">
         </div>
         <div class="online-video">
-            <img src="assest/img/video.png" alt="">
+            <div class="black-bg">
+                <img src="assest/img/play.svg" alt="Кнопка запуска">
+            </div>
         </div>
+
+        <div class="border-line"></div>
+
+        <div class="block-text-o-c">
+            <p>
+                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+                 Leave a request below and you will receive a link to the broadcast.
+            </p>
+        </div>
+
+        <form action="/action_page.php">
+            <div class="flex-form-wrap">
+                <div class="block-label">
+                    <label for="fname">Name</label><br>
+                    <input type="text" id="fname" name="fname" value="What is your name:">
+                </div>
+                <div class="block-label">
+                    <label for="phone">Phone</label><br>
+                    <input type="text" id="phone" name="phone" value="Your phone number:">
+                </div>
+                <div class="block-label">
+                    <button class="bttn-default submit-form-bttn" type="submit" >Submit</button>
+                </div>
+            </div>
+
+            <div class="checkb-width">
+                <label class="label">
+                    <input type="checkbox" class="checkbox" >
+                    <span class="fake"></span>
+                    <span class="text">I agree to the processing of personal data.</span>
+                </label>
+            </div>
+        </form> 
+
     </section>
 </body>
 </html>

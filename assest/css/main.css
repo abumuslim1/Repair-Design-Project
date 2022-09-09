@@ -12,7 +12,9 @@ main {
     width: 100%;
     height: 100%;
 }
-
+button {
+    cursor: pointer;
+}
 .width-content {
     width: 90%;
     height: 100%;
@@ -218,7 +220,7 @@ main {
 .img-camera-control {
     text-align: center;
     position: relative;
-    width: 7%;
+    width: 16%;
     height: auto;
     margin: 0 auto;
 }
@@ -241,8 +243,94 @@ main {
     top: 42%;
 }
 .online-contol{
-    margin-top: -350px;
+    width: 817px;
+    height: auto;
+    margin: -350px auto 0 auto;
 }
 .online-video {
+    width: 817px;
+    height: 434px;
+    position: relative;
+    background-image: url("../../assest/img/video.png");
+    background-repeat: no-repeat;
+    margin: 31px auto 0 auto;
+}
+.black-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000a6;
+}
+.black-bg img{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+}
+.border-line {
+    width: 55px;
+    height: 2px;
+    background: #E3B873;
+    border-radius: 30px;
+    margin: 62px auto 34px auto;
+}
+.block-text-o-c {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
     text-align: center;
+    color: #363636;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.flex-form-wrap {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 93px;
+}
+.block-label label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+.block-label input {
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 8px;
+
+}
+.submit-form-bttn {
+    font-size: 13px;
+    padding: 18px 76px 18px 76px;
+    font-style: normal;
+}
+.checkbox{
+    display: none;
+}
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+.checkb-width {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 38px;
 }
