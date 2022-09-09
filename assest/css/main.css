@@ -134,6 +134,8 @@ main {
     background-color: #131313;
     color: #fff;
     padding-top: 107px;
+    width: 100%;
+    height: 1000px;
 }
 .blocks-completed-projects {
     display: flex;
@@ -203,4 +205,44 @@ main {
 }
 .arrow-left, .arrow-right {
     height: 18px;
+}
+.title-online-control h3 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.img-camera-control {
+    text-align: center;
+    position: relative;
+    width: 7%;
+    height: auto;
+    margin: 0 auto;
+}
+.img-camera-control:before {
+    content: '';
+    width: 32px;
+    height: 2px;
+    background: #E3B873;
+    position: absolute;
+    left: 0;
+    top: 42%;
+}
+.img-camera-control:after {
+    content: '';
+    width: 32px;
+    height: 2px;
+    background: #E3B873;
+    position: absolute;
+    right: 0;
+    top: 42%;
+}
+.online-contol{
+    margin-top: -350px;
+}
+.online-video {
+    text-align: center;
 }
