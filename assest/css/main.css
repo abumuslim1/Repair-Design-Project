@@ -208,7 +208,7 @@ button {
 .arrow-left, .arrow-right {
     height: 18px;
 }
-.title-online-control h3 {
+.title-section h3 {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -217,14 +217,14 @@ button {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.img-camera-control {
+.img-section {
     text-align: center;
     position: relative;
-    width: 16%;
+    width: 120px;
     height: auto;
     margin: 0 auto;
 }
-.img-camera-control:before {
+.img-section:before {
     content: '';
     width: 32px;
     height: 2px;
@@ -233,7 +233,7 @@ button {
     left: 0;
     top: 42%;
 }
-.img-camera-control:after {
+.img-section:after {
     content: '';
     width: 32px;
     height: 2px;
@@ -333,4 +333,61 @@ button {
     height: auto;
     text-align: center;
     margin-top: 38px;
+}
+.title-rapair h3 {
+    color: #000;
+}
+.types-of-repair {
+    margin-top: 148px;
+}
+.flex-types {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 31px;
+}
+.block-types {
+    width: 392px;
+    height: 421px;
+    position: relative;
+}
+.block-info-types {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 67%;
+    background-color: #fff;
+    width: 330px;
+    height: 286;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+.block-info-types h4 {
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 34px 0 0 34px;
+}
+.list-types {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    margin-top: 13px;
+    padding: 0 0 0 50px;
+}
+.bttn-types-b {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Yeseva One';
+    padding: 21px 36px 12px 36px;
+    position: absolute;
+
+}
+.bttn-types {
+    margin-bottom: 13%;
 }
