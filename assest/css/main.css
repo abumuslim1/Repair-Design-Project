@@ -335,11 +335,11 @@ button {
     text-align: center;
     margin-top: 38px;
 }
-.title-rapair h3 {
-    color: #000;
-}
 .types-of-repair {
     margin-top: 148px;
+}
+.types-of-repair .title-section h3 {
+    color: #000;
 }
 .flex-types {
     display: flex;
@@ -467,11 +467,10 @@ button {
     color: #FFFFFF;
     margin: 0;
 }
-.block-l-form-2 label{
+.block-l-form-2 label , .block-l-form-3 label{
     color: rgba(255, 255, 255, 0.5);
-
 }
-.block-l-form-2 input {
+.block-l-form-2 input, .block-l-form-3 input {
     color: #fff;
     width: 100%;
     height: auto;
@@ -564,8 +563,183 @@ button {
     margin-top: -50px;
 }
 .img-g-s {
-   -webkit-column-break-inside: avoid;
-   page-break-inside: avoid;
-   break-inside: avoid;
-   margin: 40px 0;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 40px 0;
+}
+.our-clients {
+    margin-top: 140px;
+    position: relative;
+    background-image: url("../../assest/img/right-bg-clients.svg"), url("../../assest/img/left-bg-clients.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+}
+.our-clients .title-section h3 {
+    color: #000;
+}
+.description-section {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin: 28px 39px;
+}
+.flex-clients {
+    display: flex;
+    column-gap: 54px;
+    justify-content: center;
+}
+.block-clients {
+    width: 376px;
+    height: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding-top: 24px;
+}
+.name-b-c {
+    width: 56%;
+}
+.name-b-c h3 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+.head-img-name {
+    display: flex;
+    align-items: center;
+}
+.img-b-c {
+    padding: 0 20px 0 20px
+}
+.img-b-c img {
+    border-radius: 50%;
+}
+.content-b-c {
+    margin-top: 22px;
+    padding: 0 20px 0 20px
+}
+.content-b-c p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+}
+.text-info-c {
+    display: flex;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+.block-left-c, .block-right-c {
+    display: flex;
+    width: 50%;
+    height: auto;
+    column-gap: 15px;
+    align-items: center;
+    padding: 11px 18px 11px;
+}
+.block-right-c {
+    border-left: 1px solid #fff;
+}
+.text-b-l-c {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.icon-b-l-c {
+    height: 31px;
+    width: auto;
+}
+.info-clients {
+    width: 83%;
+    height: auto;
+    margin-top: 70px
+}
+.clients-bottom-fix {
+    padding-bottom: 400px;
+}
+.pre-footer-section {
+    min-height: 950px;
+    position: relative;
+}
+.img-pre-footer {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assest/img/bg-pre-footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.img-color-pre {
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.block-questions {
+    width: 884px;
+    height: 445px;
+    background: #181818;
+    padding: 34px;
+    position: absolute;
+    top:1%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+}
+.title-block-q {
+    padding-bottom: 45px;
+}
+.title-block-q h3 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.flex-form-pre-footer {
+    width: 68%;
+    height: auto;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 50% 50% 1fr; 
+    gap: 48px 58px;
+    grid-template-areas: 
+    "name-pre phone-pre ."
+    "que-pre que-pre ."
+    ". . ."; 
+}
+.name-pre { 
+    grid-area: name-pre; 
+}
+.phone-pre { 
+    grid-area: phone-pre; 
+}
+.que-pre { 
+    grid-area: que-pre; 
+}
+.block-l-form-3 {
+    color: #fff;
+}
+.block-l-form-3 button {
+    margin-top: 50px;
+}
+.footer-form-3 {
+    text-align: center;
 }
