@@ -302,6 +302,7 @@ button {
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-bottom: 8px;
+    background: none;
 
 }
 .submit-form-bttn {
@@ -344,6 +345,7 @@ button {
     display: flex;
     column-gap: 30px;
     margin-top: 31px;
+    justify-content: center;
 }
 .block-types {
     width: 392px;
@@ -358,7 +360,6 @@ button {
     top: 67%;
     background-color: #fff;
     width: 330px;
-    height: 286;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 .block-info-types h4 {
@@ -384,10 +385,116 @@ button {
     font-style: normal;
     font-weight: 400;
     font-family: 'Yeseva One';
-    padding: 21px 36px 12px 36px;
+    padding: 14px 36px 12px 36px;
     position: absolute;
 
 }
 .bttn-types {
     margin-bottom: 13%;
+}
+.blocks-request {
+    display: flex;
+    margin-top: 330px;
+    align-items: flex-start;
+}
+.left-b-q {
+    height: 645px;
+    width: 55%;
+    background-image: url("../../assest/img/img-type-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 645px;
+    position: relative;
+}
+.num-b-l-b {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+    padding: 12px;
+
+}
+.flex-numbers{
+    display: flex;
+    flex-direction: column;
+    row-gap: 88px;
+    position: absolute;
+    left: 26%;
+    top: 15%;
+}
+.block-left-b-q-n {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.right-b-q {
+    width: 45%;
+    height: 100%;
+}
+.block-form-l {
+    background: #131313;
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 5%);
+    width: 506px;
+    height: auto;
+    min-height: 495px;
+    padding: 27px 49px;
+}
+.block-form-leave {
+    margin-top: 79px;
+}
+.block-l-form-2 {
+    text-align: left;
+    margin: 48px 0;
+}
+.block-l-form-2:nth-last-child(-n+3) {
+    margin: 39px 0 16px 0;
+    color: #fff;
+}
+.block-l-form-2:last-child {
+    text-align: right;
+}
+.title-form-l h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+.block-l-form-2 label{
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.block-l-form-2 input {
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+.block-save {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    column-gap: 25px;
+    margin: 39px;
+}
+.save-icon img {
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgb(237 192 120 / 20%);
+    border-radius: 50%;
+    padding: 19px 16px;
+}
+.block-text-save {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
