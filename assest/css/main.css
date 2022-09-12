@@ -164,6 +164,9 @@ button {
     width: 442px;
     height: auto;
 }
+.arrows-mobile {
+    display: none;
+}
 .block-info-b-l-c-p h4 {
     font-family: 'Yeseva One';
     font-style: normal;
@@ -205,6 +208,7 @@ button {
 }
 .img-tabs-up-b-r-c-p {
     margin-top: 53px;
+    position: relative;
 }
 .dots-list {
     display: flex;
@@ -292,11 +296,30 @@ button {
     margin: 0 auto;
 }
 .flex-form-wrap {
-    display: flex;
-    column-gap: 60px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 93px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "form-1-g form-2-g form-4-g"
+    "form-3-g form-3-g form-3-g"
+    ". . ."; 
+    margin-top: 91px;
+}
+.form-1-g { 
+    grid-area: form-1-g; 
+}
+.form-2-g { 
+    grid-area: form-2-g; 
+}
+.form-3-g { 
+    grid-area: form-3-g; 
+    width: 100%;
+    text-align: center;
+    margin-top: 37px;
+}
+.form-4-g { 
+    grid-area: form-4-g; 
 }
 .block-label label {
     font-size: 13px;
@@ -341,7 +364,7 @@ button {
     margin-top: 38px;
 }
 .types-of-repair {
-    margin-top: 148px;
+    margin-top: 120px;
 }
 .types-of-repair .title-section h3 {
     color: #000;
@@ -800,6 +823,10 @@ button {
         font-size: 14px;
         line-height: 135.84%;
     }
+    .title-b-l-c-p h2 {
+        margin: 0;
+        line-height: 138.6%;
+    }
     .two-bttns {
         flex-direction: column;
         row-gap: 26px;
@@ -871,5 +898,57 @@ button {
     }
     .border-line {
         margin: 28px auto 21px auto;
+    }
+    .flex-form-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 61px auto 0 auto;
+    }
+    .block-label input {
+        width: 100%;
+        color: #fff;
+    }
+    .block-label label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .form-3-g {
+        margin-top: 0;
+    }
+    .form-3-g label .text {
+        color: #fff;
+        font-size: 14px;
+    }
+    .block-label {
+        margin-top: 61px;
+    }
+    .block-label:first-child {
+        margin-top: 0;
+    }
+    .block-label:nth-last-child(-n+2) {
+        margin-top: 26px;
+        text-align: left;
+    }
+    .block-label:nth-last-child(-n+1) {
+        margin-top: 62px;
+        margin-bottom: -24px;
+    }
+    .arrows-mobile {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .arrow-left-m {
+        padding-left: 10px;
+    }
+    .arrow-right-m {
+        padding-right: 10px;
     }
 }
