@@ -774,3 +774,39 @@ button {
     margin: 470px auto 0 auto;
     filter: grayscale(100%);
 }
+
+@media (max-width: 1300px) {
+    .menu-header, .bttn-header {
+        display: none;
+    }
+    .phone a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    .block-info-img-top {
+        position: absolute;
+        width: 90%;
+        top: 10%;
+        left: 0;
+        transform: translate(6%, -3%);
+    }
+    .title-b-i-i-t h1 {
+        font-size: 23px;
+        line-height: 132.83%;
+    }
+    .text-b-i-i-t {
+
+        font-size: 14px;
+        line-height: 135.84%;
+    }
+    .two-bttns {
+    flex-direction: column;
+    row-gap: 26px;
+    }
+    .bttn-default {
+        width: 100%;
+    }
+    .bg-img-top {
+        height: 476px
+    }
+}
